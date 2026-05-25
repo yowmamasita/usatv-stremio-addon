@@ -2,10 +2,7 @@ sources:
   # ============================================================
   # FLAGSHIP GITHUB REPOS (1K+ stars)
   # ============================================================
-  - type: github
-    repo: iptv-org/iptv
-    paths: ["streams/**/*.m3u"]
-    branch: master
+  # iptv-org/iptv: 430 files under streams/ — covered by direct:iptv-org-* URLs
 
   - type: github
     repo: fanmingming/live
@@ -24,23 +21,18 @@ sources:
 
   - type: github
     repo: vbskycn/iptv
-    paths: ["*.m3u", "*.m3u8", "*.txt"]
+    paths: ["tv/iptv4.m3u", "tv/iptv6.m3u", "*.m3u", "*.m3u8"]
     branch: master
 
   - type: github
     repo: hujingguang/ChinaIPTV
-    paths: ["*.m3u", "*.m3u8"]
+    paths: ["Global.m3u8", "USA.m3u8", "*.m3u8", "*.m3u"]
     branch: main
 
   - type: github
     repo: BurningC4/Chinese-IPTV
-    paths: ["*.m3u"]
+    paths: ["TV-IPV4.m3u", "*.m3u"]
     branch: master
-
-  - type: github
-    repo: xisohi/CHINA-IPTV
-    paths: ["*.m3u"]
-    branch: main
 
   - type: github
     repo: YueChan/Live
@@ -67,12 +59,7 @@ sources:
 
   - type: github
     repo: sumingyd/Telecom-Shandong-IPTV-List
-    paths: ["*.m3u"]
-    branch: main
-
-  - type: github
-    repo: qq254950134/my-iptv
-    paths: ["*.m3u", "*.txt"]
+    paths: ["Telecom-Shandong.m3u", "*.m3u"]
     branch: main
 
   - type: github
@@ -82,7 +69,7 @@ sources:
 
   - type: github
     repo: best-fan/iptv-sources
-    paths: ["*.m3u", "*.txt"]
+    paths: ["cn_all.m3u8", "*.m3u8", "*.m3u"]
     branch: main
 
   - type: github
@@ -92,28 +79,19 @@ sources:
 
   - type: github
     repo: alantang1977/iptv_api
-    paths: ["*.m3u", "*.txt"]
-    branch: main
-
-  - type: github
-    repo: ioptu/IPTV.txt2m3u.player
-    paths: ["*.m3u", "*.txt"]
+    paths: ["output/live_ipv4.m3u", "output/live_ipv6.m3u", "*.m3u"]
     branch: main
 
   - type: github
     repo: 0610840119/iptv-api
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/result.m3u", "output/xp_result.m3u"]
+    branch: master
 
   - type: github
     repo: binhex/iptv
     paths: ["*.m3u"]
     branch: master
 
-  - type: github
-    repo: jia070310/4K-IPTV-M3U
-    paths: ["*.m3u"]
-    branch: main
 
   - type: github
     repo: leyan1987/iptv
@@ -127,7 +105,7 @@ sources:
 
   - type: github
     repo: cs3306/IPTV-Sources
-    paths: ["*.m3u", "*.txt"]
+    paths: ["data/output/iptv_collection.m3u", "*.m3u"]
     branch: main
 
   - type: github
@@ -142,8 +120,8 @@ sources:
 
   - type: github
     repo: Ethan-Men/8159-TV
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/ipv4/result.m3u", "output/ipv6/result.m3u", "output/user_result.m3u"]
+    branch: master
 
   - type: github
     repo: sammy0101/hk-iptv-auto
@@ -152,24 +130,20 @@ sources:
 
   - type: github
     repo: naggdd/iptv
-    paths: ["*.m3u"]
+    paths: ["cartoons.m3u", "radio.m3u", "ru.m3u", "*.m3u"]
     branch: main
 
   - type: github
     repo: jia070310/lemonTV
-    paths: ["*.m3u"]
+    paths: ["iptv-fe.m3u", "*.m3u"]
     branch: main
 
-  - type: github
-    repo: Romaxa55/world_ip_tv
-    paths: ["*.m3u"]
-    branch: main
 
   # Smaller Chinese forks
   - type: github
     repo: xiongjian83/TV1
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/result.m3u", "output/ipv4/result.m3u"]
+    branch: master
 
   - type: github
     repo: onlylove2023/iptv
@@ -178,23 +152,23 @@ sources:
 
   - type: github
     repo: 4yt1k/m3u-autoupdate
-    paths: ["*.m3u"]
-    branch: main
+    paths: ["output/result.m3u", "output/user_result.m3u"]
+    branch: master
 
   - type: github
     repo: adminouyang/TV
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/result.m3u", "output/ipv4/result.m3u"]
+    branch: master
 
   - type: github
     repo: TREEWE1/iptv-api
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/result.m3u", "output/ipv4/result.m3u"]
+    branch: master
 
   - type: github
     repo: 3377/IPTV
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/result.m3u", "output/ipv4/result.m3u"]
+    branch: master
 
   - type: github
     repo: vnsu/HeNanCMCCIPTV
@@ -203,45 +177,36 @@ sources:
 
   - type: github
     repo: xiaochou5471/iptv
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/result.m3u", "output/ipv4/result.m3u"]
+    branch: master
 
-  - type: github
-    repo: zhmzjj310144/migu-sports
-    paths: ["*.m3u"]
-    branch: main
 
   - type: github
     repo: 80947108/guovin
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/result.m3u", "output/ipv4/result.m3u"]
+    branch: master
 
   # ============================================================
   # PLAYLIST / SOURCE REPOSITORIES
   # ============================================================
   - type: github
     repo: iprtl/m3u
-    paths: ["*.m3u"]
-    branch: main
+    paths: ["Freetv.m3u", "Pluto.m3u", "*.m3u", "*.m3u8"]
+    branch: live
 
   - type: github
     repo: Alplox/json-teles
-    paths: ["*.m3u"]
-    branch: master
+    paths: ["canales.m3u", "*.m3u"]
+    branch: main
 
   - type: github
     repo: amazeyourself/m3u
-    paths: ["*.m3u"]
+    paths: ["distrotv.m3u", "akashgo.m3u", "Plex/plex_all.m3u", "*.m3u"]
     branch: main
 
   - type: github
     repo: Mr-DS-ML-85/IPTV-98
-    paths: ["*.m3u"]
-    branch: main
-
-  - type: github
-    repo: rebeliptv/iptv
-    paths: ["*.m3u"]
+    paths: ["playlist/playlist.m3u", "playlist/*.m3u", "*.m3u"]
     branch: main
 
   - type: github
@@ -254,19 +219,15 @@ sources:
     paths: ["*.m3u"]
     branch: main
 
-  - type: github
-    repo: bnyusuf31-lab/tr_github.m3u
-    paths: ["*.m3u"]
-    branch: main
 
   - type: github
     repo: twitchy2u/Pluto-TV-my-stuff
-    paths: ["*.m3u"]
+    paths: ["output/plutotv_all.m3u8", "output/plutotv_us.m3u8", "output/*.m3u8"]
     branch: main
 
   - type: github
     repo: Addicted2u143/live-events-playlist
-    paths: ["*.m3u"]
+    paths: ["docs/live-events.m3u", "*.m3u"]
     branch: main
 
   - type: github
@@ -276,17 +237,17 @@ sources:
 
   - type: github
     repo: roohstah-cyber/iptv-de-maxxx
-    paths: ["*.m3u"]
+    paths: ["m3u/fast_de.m3u", "m3u/public_hd.m3u", "m3u/private_free.m3u", "*.m3u"]
     branch: main
 
   - type: github
     repo: Indiblog/india-iptv
-    paths: ["*.m3u"]
+    paths: ["output/india_iptv.m3u", "output/india_general.m3u", "*.m3u"]
     branch: main
 
   - type: github
     repo: mdsanuarmahmud/T-Playlist-Sports
-    paths: ["*.m3u"]
+    paths: ["data/playlists/sports_playlists.m3u", "*.m3u"]
     branch: main
 
   # ============================================================
@@ -294,17 +255,12 @@ sources:
   # ============================================================
   - type: github
     repo: abusaeeidx/IPTV-Scraper-Zilla
-    paths: ["*.m3u"]
-    branch: main
-
-  - type: github
-    repo: abusaeeidx/Mrgify-BDIX-IPTV
-    paths: ["*.m3u"]
+    paths: ["BD.m3u", "PlutoTV-All.m3u", "LGTV.m3u", "CricHD.m3u", "*.m3u"]
     branch: main
 
   - type: github
     repo: atanuroy22/iptv
-    paths: ["*.m3u"]
+    paths: ["output/all.m3u", "*.m3u"]
     branch: main
 
   - type: github
@@ -314,7 +270,7 @@ sources:
 
   - type: github
     repo: ashik4u/iptv-m3u-bot
-    paths: ["*.m3u"]
+    paths: ["output/all.m3u", "*.m3u"]
     branch: main
 
   - type: github
@@ -324,11 +280,6 @@ sources:
 
   - type: github
     repo: JOGINDHARR/Net-Tv-Iptv-Playlist
-    paths: ["*.m3u"]
-    branch: main
-
-  - type: github
-    repo: JackCoates1/daddylive-m3u
     paths: ["*.m3u"]
     branch: main
 
@@ -343,16 +294,6 @@ sources:
   # matthuisman/i.mjh.nz — repo only has EPG .xml.gz files, no M3U.
   # M3U8 playlists are served from https://i.mjh.nz/ directly
   # (covered by the direct sources below: i-mjh-pluto-us, i-mjh-samsung-us, etc.)
-
-  - type: github
-    repo: dtankdempsey2/epgshare01-slim
-    paths: ["*.m3u"]
-    branch: main
-
-  - type: github
-    repo: braggkd/iptv-sports-epg
-    paths: ["*.m3u"]
-    branch: main
 
   # ============================================================
   # REGIONAL COLLECTIONS
@@ -375,7 +316,7 @@ sources:
 
   - type: direct
     name: iptv-org-uk
-    url: https://iptv-org.github.io/iptv/countries/gb.m3u
+    url: https://iptv-org.github.io/iptv/countries/uk.m3u
 
   - type: direct
     name: iptv-org-ca
@@ -464,22 +405,12 @@ sources:
     strategy: link_scrape
 
   - type: website
-    name: freeiptv-app
-    url: https://freeiptv.app/
-    strategy: link_scrape
-
-  - type: website
     name: freepopulariptvplaylist
     url: https://freepopulariptvplaylist.com/
     strategy: link_scrape
 
   # m3uplaylists.com and iptv-m3ulist.com are landing pages without M3U content
   # Replaced with tvappapk.com which actually hosts Xtream codes
-  - type: website
-    name: tvappapk-xtream
-    url: https://www.tvappapk.com/
-    strategy: deep_scrape
-
   - type: website
     name: iptv-m3ulist
     url: https://iptv-m3ulist.com/
@@ -488,12 +419,8 @@ sources:
   - type: website
     name: world-iptv-club
     url: https://world-iptv.club/
-    strategy: link_scrape
-
-  - type: website
-    name: fluxustv
-    url: https://fluxustv.blogspot.com/p/m3u-list.html
     strategy: deep_scrape
+
 
   - type: website
     name: u-m3uiptv
@@ -505,10 +432,6 @@ sources:
     url: https://emucodes6.blogspot.com/
     strategy: deep_scrape
 
-  - type: website
-    name: dailyiptvchannels
-    url: https://dailyiptvchannels.blogspot.com/
-    strategy: deep_scrape
 
   - type: website
     name: firesticktricks
@@ -525,10 +448,6 @@ sources:
     url: https://www.techpriyo.com/iptv-m3u-playlist/
     strategy: link_scrape
 
-  - type: website
-    name: techedubyte
-    url: https://www.techedubyte.com/free-popular-iptv-playlist-2026/
-    strategy: link_scrape
 
   - type: website
     name: the-best-iptv
@@ -540,10 +459,6 @@ sources:
     url: https://kodibeginner.com/best-free-m3u-playlists/
     strategy: link_scrape
 
-  - type: website
-    name: smartkingpro
-    url: https://smartkingpro.online/blog/free-iptv-m3u-playlist-working-links-for-unlimited-channels/
-    strategy: deep_scrape
 
   # Non-English websites
   - type: website
@@ -585,9 +500,6 @@ sources:
   # TELEGRAM CHANNELS
   # ============================================================
   - type: telegram
-    channel: stbemucodesiptv
-
-  - type: telegram
     channel: xtream_iptv_code
 
   - type: telegram
@@ -600,9 +512,6 @@ sources:
   # dailyiptvm3u: uses URL shorteners (bit.ly), no direct M3U/Xtream URLs
 
   - type: telegram
-    channel: worldwiddeiptv
-
-  - type: telegram
     channel: woorldiptv
 
   # iptvplayerlist: uses URL shorteners (vplink.in/gplinks.co), not directly scrapable
@@ -612,9 +521,6 @@ sources:
 
   - type: telegram
     channel: stbemumacport
-
-  - type: telegram
-    channel: stbemuiptvcom2
 
   - type: telegram
     channel: Indian_iptv_list
@@ -647,28 +553,8 @@ sources:
   # ============================================================
   - type: github
     repo: Guovin/iptv-api
-    paths: ["*.m3u", "*.txt"]
-    branch: master
-
-  - type: github
-    repo: dp247/Freeview-EPG
-    paths: ["*.m3u", "*.m3u8"]
-    branch: main
-
-  - type: github
-    repo: gilbertian-pithecanthropus683/airwavetv
-    paths: ["*.m3u", "*.html"]
-    branch: main
-
-  - type: github
-    repo: ymlyyy/TVAuto
-    paths: ["*.m3u", "*.txt"]
-    branch: main
-
-  - type: github
-    repo: mrgaoshuiquan/tvbox-config
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/result.m3u", "output/ipv4/result.m3u"]
+    branch: gd
 
   - type: github
     repo: Basidibloge/Basidi-IPTV-Live
@@ -677,47 +563,37 @@ sources:
 
   - type: github
     repo: JulioCesarXY/EPG-LG-Channels
-    paths: ["*.m3u", "*.m3u8"]
+    paths: ["lg_channels_us.m3u", "*.m3u"]
     branch: main
-
-  - type: github
-    repo: iptv-org/epg
-    paths: ["*.m3u"]
-    branch: master
 
   # Chinese forks mentioned in report "25 more" list
   - type: github
     repo: iptvjs/iptv-api
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/result.m3u", "output/ipv4/result.m3u"]
+    branch: master
 
   - type: github
     repo: KevinTang01/iptv-api
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/result.m3u", "output/ipv4/result.m3u"]
+    branch: master
 
   - type: github
     repo: zhangzhui/IPTVUpdateTool
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/result.m3u", "output/ipv4/result.m3u"]
+    branch: master
 
   - type: github
     repo: vipxb/zhibo
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/result.m3u", "output/tv.m3u", "output/ipv4/result.m3u"]
+    branch: master
 
   - type: github
     repo: xJEYDAin/iptv-scraper
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/all_merged.m3u", "filtered/*.m3u"]
+    branch: master
 
   - type: github
     repo: SarinV/My-TV
-    paths: ["*.m3u", "*.txt"]
-    branch: main
-
-  - type: github
-    repo: WuYaoTianQiong/IPTV-Check
     paths: ["*.m3u", "*.txt"]
     branch: main
 
@@ -726,15 +602,11 @@ sources:
     paths: ["*.m3u", "*.txt"]
     branch: main
 
-  - type: github
-    repo: sting2k1/iptv-aggregator
-    paths: ["*.m3u", "*.txt"]
-    branch: main
 
   - type: github
     repo: khw934/TV
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/result.m3u", "output/ipv4/result.m3u"]
+    branch: master
 
   - type: github
     repo: Heiwk/iptv67
@@ -748,18 +620,18 @@ sources:
 
   - type: github
     repo: xiaolong-nihao/IPTV-api
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/result.m3u", "output/ipv4/result.m3u"]
+    branch: master
 
   - type: github
     repo: yyyr-otz/iptv-api
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/result.m3u", "output/ipv4/result.m3u"]
+    branch: master
 
   - type: github
     repo: Cx4x/xdd
-    paths: ["*.m3u", "*.txt"]
-    branch: main
+    paths: ["output/result.m3u", "output/user_result.m3u", "output/ipv4/result.m3u"]
+    branch: master
 
   # ============================================================
   # ADDITIONAL DIRECT M3U URLs — more iptv-org countries
@@ -904,25 +776,12 @@ sources:
   # ============================================================
   # ADDITIONAL WEBSITES (from report)
   # ============================================================
-  - type: website
-    name: stbemuiptv
-    url: https://stbemuiptv.net/
-    strategy: link_scrape
-
-  - type: website
-    name: stbstalker
-    url: https://stbstalker.alaaeldinee.com/
-    strategy: link_scrape
 
   - type: website
     name: androidtechvilla
     url: https://androidtechvilla.com/list-of-working-1000-iptv-portal-urls-logins-and-mac-address-2021-3/
     strategy: link_scrape
 
-  - type: website
-    name: computerhoy-es
-    url: https://computerhoy.20minutos.es/entretenimiento/como-ver-lista-iptv-gratis-con-mas-39-000-canales-m3u-actualizada-2026-
-    strategy: link_scrape
 
   - type: website
     name: infotelematico-it
@@ -934,30 +793,12 @@ sources:
     url: https://www.weareblog.it/liste-iptv-gratis-aggiornate/
     strategy: link_scrape
 
-  - type: website
-    name: pallok-it
-    url: https://www.pallok.com/liste-iptv-gratuite-autoaggiornanti/
-    strategy: link_scrape
-
-  - type: website
-    name: informarea-it
-    url: https://www.informarea.it/dove-trovare-liste-iptv-gratis/
-    strategy: link_scrape
 
   - type: website
     name: morettiflix-es
     url: https://morettiflix.com/mejores-listas-iptv-m3u-gratis-2026
     strategy: link_scrape
 
-  - type: website
-    name: techozona-es
-    url: https://techozona.com/lista-de-canales-iptv-2026/
-    strategy: link_scrape
-
-  - type: website
-    name: somosnoticia-br
-    url: https://somosnoticia.com.br/lista-iptv-m3u-2026-github-guia-extrair/
-    strategy: link_scrape
 
   - type: website
     name: renkz
@@ -974,31 +815,12 @@ sources:
     url: https://blog.rdphostings.com/iptv-github-playlist
     strategy: link_scrape
 
-  - type: website
-    name: iptvday
-    url: https://iptvday.weebly.com/
-    strategy: link_scrape
 
   - type: website
     name: jellywatch
     url: https://jellywatch.app/blog/jellyfin-live-tv-iptv-setup-guide-2026
     strategy: link_scrape
 
-  - type: website
-    name: taghdoutelive
-    url: https://iptv.taghdoutelive.com/
-    strategy: link_scrape
-
-  # Forums with M3U threads
-  - type: website
-    name: sat-forum
-    url: https://sat-forum.net/viewforum.php?f=41
-    strategy: link_scrape
-
-  - type: website
-    name: linuxsat-support
-    url: https://www.linuxsat-support.com/board/590-iptv-streaming/
-    strategy: link_scrape
 
   # ============================================================
   # ADDITIONAL TELEGRAM CHANNELS
@@ -1006,105 +828,9 @@ sources:
   - type: telegram
     channel: Extream_IPTV
 
-  - type: telegram
-    channel: iptvxtream
 
-  - type: telegram
-    channel: amazingfreeiptvcodes
 
-  - type: telegram
-    channel: Xtream_Iptv_links
 
-  # ============================================================
-  # OTHER PLATFORMS (Gitee, GitLab mirrors)
-  # ============================================================
-  - type: direct
-    name: gitee-solitary321
-    url: https://gitee.com/solitary321/iptv/raw/master/tv.m3u
-
-  - type: direct
-    name: gitlink-iptv
-    url: https://www.gitlink.org.cn/iptv/iptv/raw/branch/master/streams/us.m3u
-
-  # ============================================================
-  # SOURCEFORGE MIRRORS
-  # ============================================================
-  - type: website
-    name: sourceforge-m3u
-    url: https://sourceforge.net/projects/m3u.mirror/
-    strategy: link_scrape
-
-  - type: website
-    name: sourceforge-iptv-free
-    url: https://sourceforge.net/projects/iptv-free-tv.mirror/
-    strategy: link_scrape
-
-  # ============================================================
-  # REGIONAL IPTV WEBSITES
-  # ============================================================
-  # Arab
-  - type: website
-    name: arabtv4k
-    url: https://arabtv4k.com/
-    strategy: link_scrape
-
-  - type: website
-    name: star7arab
-    url: https://star7arab.com/
-    strategy: link_scrape
-
-  - type: website
-    name: tarek4tech
-    url: https://tarek4tech.com/
-    strategy: link_scrape
-
-  # Russian/Ukrainian
-  - type: website
-    name: iptv-org-ua
-    url: https://iptv.org.ua/
-    strategy: link_scrape
-
-  - type: website
-    name: iptvdoma-ru
-    url: https://iptvdoma.ru/
-    strategy: link_scrape
-
-  - type: website
-    name: potelevizoram-ru
-    url: https://potelevizoram.ru/
-    strategy: link_scrape
-
-  - type: website
-    name: smart-iptv-ru
-    url: https://smart-iptv.ru/
-    strategy: link_scrape
-
-  - type: website
-    name: tva-in-ua
-    url: https://tva.in.ua/
-    strategy: link_scrape
-
-  - type: website
-    name: tv-team
-    url: https://tv.team/
-    strategy: link_scrape
-
-  # Turkish
-  - type: website
-    name: serdal-org
-    url: https://serdal.org/
-    strategy: link_scrape
-
-  - type: website
-    name: seyirturk
-    url: https://seyirturk.net/
-    strategy: link_scrape
-
-  # Ex-Yugoslavia
-  - type: website
-    name: exyuteam
-    url: https://exyuteam.com/
-    strategy: link_scrape
 
   # Guide/meta sites
   - type: website
@@ -1117,192 +843,15 @@ sources:
     url: https://tapgo.tv/blog/m3u-playlist-iptv-guide/
     strategy: link_scrape
 
-  - type: website
-    name: xtream2m3u
-    url: https://www.xtream2m3u.com/
-    strategy: link_scrape
 
-  # ============================================================
-  # SATELLITE & IPTV FORUMS
-  # ============================================================
-  - type: website
-    name: forum-sat
-    url: https://forum-sat.com/
-    strategy: link_scrape
 
-  - type: website
-    name: iptvforum
-    url: https://iptvforum.net/
-    strategy: link_scrape
 
-  - type: website
-    name: iptvsat-forum
-    url: https://iptvsat-forum.com/
-    strategy: link_scrape
 
-  - type: website
-    name: myiptvforum
-    url: https://myiptvforum.com/
-    strategy: link_scrape
 
-  - type: website
-    name: techkings
-    url: https://techkings.org/
-    strategy: link_scrape
 
-  - type: website
-    name: satfix
-    url: https://satfix.to/
-    strategy: link_scrape
-
-  - type: website
-    name: sl-forums
-    url: https://sl-forums.com/
-    strategy: link_scrape
-
-  - type: website
-    name: boxpirates
-    url: https://www.boxpirates.to/
-    strategy: link_scrape
-
-  - type: website
-    name: sat-universe
-    url: https://www.sat-universe.com/
-    strategy: link_scrape
-
-  - type: website
-    name: satsupreme
-    url: https://www.satsupreme.com/forum.php
-    strategy: link_scrape
-
-  - type: website
-    name: linux-sat-nl
-    url: https://linux-sat.nl/
-    strategy: link_scrape
-
-  - type: website
-    name: forum-husham
-    url: https://forum.husham.com/
-    strategy: link_scrape
-
-  - type: website
-    name: kodi-pvr-forum
-    url: https://forum.kodi.tv/forumdisplay.php?fid=167
-    strategy: link_scrape
-
-  - type: website
-    name: forum-videohelp
-    url: https://forum.videohelp.com/
-    strategy: link_scrape
-
-  - type: website
-    name: xda-iptv
-    url: https://xdaforums.com/tags/iptv/
-    strategy: link_scrape
-
-  - type: website
-    name: xda-m3u
-    url: https://xdaforums.com/tags/m3u/
-    strategy: link_scrape
-
-  - type: website
-    name: tvheadend-epg
-    url: https://tvheadend.org/d/5263-epg-for-iptv
-    strategy: link_scrape
-
-  # ============================================================
-  # EPG / XMLTV PROVIDERS (some also serve M3U)
-  # ============================================================
-  - type: website
-    name: epg-pw
-    url: https://epg.pw/xmltv.html?lang=en
-    strategy: link_scrape
-
-  - type: website
-    name: iptv-epg-org
-    url: https://iptv-epg.org/guides
-    strategy: link_scrape
-
-  - type: website
-    name: open-epg
-    url: https://www.open-epg.com/app/epgguide.php
-    strategy: link_scrape
-
-  - type: website
-    name: epg-plus
-    url: https://epg-plus.com/
-    strategy: link_scrape
-
-  - type: website
-    name: epgeditor
-    url: https://www.epgeditor.com/channel-list
-    strategy: link_scrape
-
-  - type: website
-    name: grokipedia-epg
-    url: https://grokipedia.com/page/IPTV_EPG_sources
-    strategy: link_scrape
-
-  # ============================================================
-  # ADDITIONAL TELEGRAM CHANNELS
-  # ============================================================
-  - type: telegram
-    channel: xtreamiptvm
-
-  # ============================================================
-  # GITEE / GITLAB / GITEA REPOS
-  # ============================================================
-  - type: direct
-    name: gitee-tyler6
-    url: https://gitee.com/tyler6/IPTV22/raw/master/iptv.m3u
-
-  - type: direct
-    name: gitee-cat-iptv
-    url: https://gitee.com/k1015062E/iptv/raw/master/tv.m3u
-
-  - type: direct
-    name: gitea-jpt-iptv
-    url: https://gitea.jpt.land/jpt/IPTV/raw/branch/main/index.m3u
-
-  - type: direct
-    name: gitlab-iptv-org
-    url: https://gitlab.com/iptv-org/iptv/-/raw/master/streams/us.m3u
-
-  # ============================================================
-  # PASTE / DOCUMENT SITES (Xtream codes)
-  # ============================================================
-  - type: paste
-    name: scribd-xtream-m3u
-    url: https://www.scribd.com/document/869963322/Xtream-and-m3u-Playlist-Links-and-Codes
-
-  - type: paste
-    name: scribd-xtream-2026
-    url: https://www.scribd.com/document/979676921/868150182-784772306-Xtream-IPTV-Activation-Codes-2026
-
-  - type: paste
-    name: scribd-iptv-2026
-    url: https://www.scribd.com/document/826011565/2026
-
-  - type: paste
-    name: scribd-listas-m3u
-    url: https://www.scribd.com/document/993283976/Listas-m3u-2026
-
-  - type: paste
-    name: scribd-stb-emu
-    url: https://www.scribd.com/document/1021113194/STB-EMU-Pro-Free-Portal-MAC-Address-Daily-Update-1
-
-  # Xtream codes wiki
-  - type: website
-    name: ottrun-xtream
-    url: https://wiki.ottrun.com/homepage/xciptv/panel-support/all-xtream-codes
-    strategy: link_scrape
-
-  # ============================================================
-  # AWESOME-IPTV META LIST (links to more M3U sources)
-  # ============================================================
   - type: website
     name: awesome-iptv
-    url: https://raw.githubusercontent.com/iptv-org/awesome-iptv/master/readme.md
+    url: https://raw.githubusercontent.com/iptv-org/awesome-iptv/master/README.md
     strategy: link_scrape
 
   # ============================================================
@@ -1313,32 +862,3 @@ sources:
     paths: ["*.m3u", "*.m3u8"]
     branch: main
 
-  - type: github
-    repo: sapos4981/MyIPTV
-    paths: ["*.m3u"]
-    branch: main
-
-  - type: github
-    repo: activistpt/iptv-player
-    paths: ["*.m3u"]
-    branch: main
-
-  - type: github
-    repo: gilbertian-pithecanthropus683/airwavetv
-    paths: ["*.m3u", "*.m3u8"]
-    branch: main
-
-  - type: github
-    repo: m3ue/m3u-proxy
-    paths: ["*.m3u"]
-    branch: main
-
-  - type: github
-    repo: janaz/iptvp
-    paths: ["*.m3u"]
-    branch: main
-
-  - type: github
-    repo: Filiberto97/IPTV-StreamWatcher
-    paths: ["*.m3u"]
-    branch: main

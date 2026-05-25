@@ -137,13 +137,16 @@ def harvest(sources_file, filter_type, filter_name, concurrency, resume):
 @click.option("--timeout", type=float, default=DEFAULT_TIMEOUT)
 @click.option("--concurrency", type=int, default=DEFAULT_TEST_CONCURRENCY)
 @click.option("--resume/--no-resume", default=True)
-def test(input_file, timeout, concurrency, resume):
+@click.option("--limit", type=int, default=None, help="Max streams to test")
+def test(input_file, timeout, concurrency, resume, limit):
     """Test collected streams with ffprobe."""
     raw = load_streams(input_file)
     if not raw:
         console.print("[red]No streams found. Run 'harvest' first.[/]")
         return
     streams = [ParsedStream(**s) for s in raw]
+    if limit:
+        streams = streams[:limit]
     results = asyncio.run(_test(streams, timeout, concurrency, resume))
     console.print(f"\n[bold green]Tested {len(results)} streams[/]")
 

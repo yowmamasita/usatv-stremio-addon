@@ -18,6 +18,13 @@ _M3U_EXTENSIONS = (".m3u", ".m3u8")
 _BRANCH_FALLBACKS = ("main", "master")
 
 COMMON_M3U_PATHS = [
+    "output/result.m3u", "output/result.m3u8", "output/result.txt",
+    "output/all.m3u", "output/all.m3u8",
+    "output/live.m3u", "output/live.m3u8", "output/live.txt",
+    "output/output.m3u", "output/output.txt",
+    "output/ipv4/result.m3u", "output/ipv6/result.m3u",
+    "output/user_result.m3u", "output/xp_result.m3u",
+    "output/live_ipv4.m3u", "output/live_ipv6.m3u",
     "index.m3u", "index.m3u8",
     "playlist.m3u", "playlist.m3u8",
     "live.m3u", "live.m3u8",
@@ -25,20 +32,23 @@ COMMON_M3U_PATHS = [
     "tv.m3u", "tv.m3u8",
     "all.m3u", "all.m3u8",
     "channels.m3u", "channels.m3u8",
-    "output.m3u", "output.m3u8",
     "result.m3u", "result.m3u8",
     "list.m3u", "list.m3u8",
     "IPTV.m3u", "IPTV.m3u8",
     "cn.m3u", "us.m3u", "hk.m3u",
-    "output/result.m3u", "output/result.txt",
-    "output/output.m3u", "output/output.txt",
     "m3u/iptv.m3u", "m3u/result.m3u",
     "live_ipv4.m3u", "live_ipv6.m3u",
     "live.txt", "tv.txt", "iptv.txt", "result.txt",
-    "output/live.m3u", "output/live.txt",
     "itv.m3u", "itv.m3u8",
     "combined.m3u", "combined.m3u8",
     "global.m3u", "world.m3u",
+    "tv/m3u/index.m3u", "radio/m3u/index.m3u",
+    "tv/iptv4.m3u", "tv/iptv6.m3u",
+    "simple.m3u", "eng.m3u",
+    "Gather.m3u", "Migu.m3u",
+    "hk_live.m3u", "my_tv.m3u",
+    "iptvit.m3u", "radioita.m3u8",
+    "SU.m3u", "BD.m3u",
 ]
 
 
@@ -157,7 +167,7 @@ class GitHubSource(BaseSource):
         # If nothing found, try fallback branch
         if not streams:
             alt_branch = "master" if branch == "main" else "main"
-            tasks = [try_path(p, alt_branch) for p in COMMON_M3U_PATHS[:20]]
+            tasks = [try_path(p, alt_branch) for p in COMMON_M3U_PATHS]
             results = await asyncio.gather(*tasks, return_exceptions=True)
             for r in results:
                 if isinstance(r, list) and r:

@@ -207,8 +207,6 @@ def inject_cmd(input_file):
     stats = inject(input_file)
     console.print(f"Channels updated: {stats['channels_updated']}")
     console.print(f"Streams added: {stats['streams_added']}")
-    console.print(f"Streams marked dead: {stats['streams_marked_dead']}")
-    console.print(f"Existing streams verified working: {stats['existing_verified']}")
 
 
 @main.command()
@@ -234,7 +232,6 @@ def run(sources_file, filter_type, filter_name, timeout, harvest_concurrency, te
         console.print("\n[bold]Injecting working streams into catalog...[/]")
         stats = inject()
         console.print(f"  Channels updated: {stats['channels_updated']}, Streams added: {stats['streams_added']}")
-        console.print(f"  Marked dead: {stats['streams_marked_dead']}, Verified working: {stats['existing_verified']}")
 
         rep = generate_report(results, sources_total=len(sources))
         save_report(rep)

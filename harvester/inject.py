@@ -120,28 +120,15 @@ def inject(test_results_path: str = "data/test_results.json") -> dict:
     catalog = json.load(open(CATALOG_PATH))
     channels = catalog["metas"]
 
-    working_by_url = {r["url"]: r for r in working}
-    tested_urls = {r["url"] for r in results}
     catalog_norms = {_normalize(ch["name"]) for ch in channels}
 
     channel_matches = _match_streams(channels, working, catalog_norms)
 
-    stats = {"channels_updated": 0, "streams_added": 0, "streams_marked_dead": 0, "existing_verified": 0}
+    stats = {"channels_updated": 0, "streams_added": 0}
 
     for ch in channels:
         streams = ch.get("streams", [])
         existing_urls = {s["url"] for s in streams}
-
-        for s in streams:
-            url = s.get("url", "")
-            if url in working_by_url:
-                if "[DEAD]" in s.get("name", ""):
-                    s["name"] = s["name"].replace("[DEAD] ", "")
-                stats["existing_verified"] += 1
-            elif url in tested_urls:
-                if "[DEAD]" not in s.get("name", ""):
-                    s["name"] = f"[DEAD] {s.get('name', '')}"
-                    stats["streams_marked_dead"] += 1
 
         new_streams = [
             r for r in channel_matches.get(ch["id"], [])
@@ -183,5 +170,3 @@ if __name__ == "__main__":
     stats = inject()
     print(f"Channels updated: {stats['channels_updated']}")
     print(f"Streams added: {stats['streams_added']}")
-    print(f"Streams marked dead: {stats['streams_marked_dead']}")
-    print(f"Existing streams verified working: {stats['existing_verified']}")
